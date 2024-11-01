@@ -1,0 +1,169 @@
+header{
+    margin:0 auto;
+    background-color: #3EB3F2;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px; 
+    font-family: outifit;
+    font-size: 25px;
+    color: aliceblue;
+}
+.login{
+    display: flex;
+    gap: 10px;
+}
+.login img{
+    width: 15%;;
+}
+header img{
+    width: 8%;
+}
+a{
+    color: initial;
+    text-decoration: none;
+}
+.navindex{
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    gap: 35px;
+    background-color: #BDD5EA;
+}
+.navindex li{
+    gap: 5px;
+    padding: 10px;
+}
+a:hover{
+    color: initial;
+    text-decoration: underline;
+}
+ul, li{
+    list-style-type: none;
+    font-style: initial;
+    color: initial;
+}
+.cards{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+.aluno{
+    width: 150px;
+}
+.aluno img{
+    width: 100px;
+}
+.prof{
+    width: 150px;
+}
+.prof img{
+    width: 100px;
+}
+.triagem{
+    width: 150px;
+}
+.triagem img{
+    width: 100px;
+}
+
+.form_cadastro{
+    padding: 50px;
+    position: absolute;
+    top: 350px;
+    right: 350px;
+    background-color: #3EB3F2;
+    border-radius: 50px;
+    width: 500px;
+}
+
+.cad1{
+    text-align: center;
+    color: aliceblue;
+}
+
+label{
+    display: block;
+}
+
+input[type="text"], input[type="email"],input[type="number"],input[type="password"],textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+input[type="submit"]{
+    border: 1px #3EB3F2;
+}
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .aluno, .prof, .triagem, .al2, .prof2, .tri2, .form_cadastro {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        margin: 20px auto;
+    }
+    .form_cadastro {
+        width: 90%;
+        padding: 20px;
+    }
+    input[type="text"], input[type="email"],input[type="number"],input[type="password"],textarea {
+        width: 90%;
+    }
+}
+.carousel {
+    position: relative;
+    width: 100%;  /* Ajustar a largura para ocupar toda a página */
+    height: 400px;  /* Aumentar a altura para 400px */
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;  /* Ajustar a altura para ocupar todo o carrossel */
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;  /* Garantir que a altura do item se ajuste ao carrossel */
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;  /* Ajustar a imagem para ocupar todo o espaço do item */
+    object-fit: cover;  /* Manter a proporção da imagem, cortando se necessário */
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
